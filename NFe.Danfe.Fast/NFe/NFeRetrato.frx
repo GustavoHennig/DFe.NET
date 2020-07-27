@@ -1163,7 +1163,7 @@ namespace FastReport
       <TextObject Name="Memo26" Left="253.23" Top="156.85" Width="253.23" Height="17.01" Text="[NFe.NFe.infNFe.emit.IEST]" Padding="5, 1, 5, 1" VertAlign="Bottom" Font="Times New Roman, 8pt"/>
       <TextObject Name="Memo27" Left="506.46" Top="147.4" Width="238.11" Height="26.46" Border.Lines="All" Border.Width="0.5" Text="CNPJ" Padding="2, 2, 2, 2" Font="Times New Roman, 5pt"/>
       <TextObject Name="Memo28" Left="506.46" Top="156.85" Width="238.11" Height="17.01" Text="[FormatarCampo([NFe.NFe.infNFe.emit.CNPJ],'d')]" Padding="5, 1, 5, 1" VertAlign="Bottom" Font="Times New Roman, 8pt"/>
-      <PictureObject Name="poEmitLogo" Left="1.89" Top="37.8" Width="98.27" Height="81.26" Fill.Color="White" SizeMode="StretchImage" Image=""/>
+      <PictureObject Name="poEmitLogo" Left="1.89" Top="37.8" Width="98.27" Height="81.26" Fill.Color="White" SizeMode="Zoom" Padding="2, 2, 2, 2"/>
       <BarcodeObject Name="BarcodeChave" Left="445.66" Top="5.67" Width="277.07" Height="37.8" AutoSize="false" Text="123456789012345678946546546579878454676546546546546556465" ShowText="false" AllowExpressions="true" Barcode="Code128" Barcode.CalcCheckSum="false" Barcode.AutoEncode="true"/>
       <BarcodeObject Name="BarCodeContigencia" Left="445.66" Top="83.16" Width="277.07" Height="34.02" ShiftMode="WhenOverlapped" AutoSize="false" Text="123456789012345678946546546579878454676546546546546556465" ShowText="false" AllowExpressions="true" Barcode="Code128" Barcode.CalcCheckSum="false" Barcode.AutoEncode="true"/>
     </PageHeaderBand>
@@ -1177,7 +1177,7 @@ namespace FastReport
       <TextObject Name="Memo35" Left="631.18" Top="69.81" Width="113.39" Height="26.46" Border.Lines="All" Border.Width="0.5" Text="HORA DA SAÍDA" Padding="2, 2, 2, 2" Font="Times New Roman, 5pt"/>
       <TextObject Name="Memo36" Left="631.18" Top="79.26" Width="113.39" Height="17.01" Text="[NFe.NFe.infNFe.ide.dhSaiEnt]" Padding="5, 1, 5, 1" Format="Time" Format.Format="t" HorzAlign="Center" VertAlign="Bottom" WordWrap="false" Font="Times New Roman, 8pt, style=Bold"/>
       <TextObject Name="Memo37" Left="468.66" Top="16.9" Width="162.52" Height="26.46" Border.Lines="All" Border.Width="0.5" Text="CNPJ / CPF" Padding="2, 2, 2, 2" Font="Times New Roman, 5pt"/>
-      <TextObject Name="Memo38" Left="468.66" Top="26.35" Width="162.52" Height="17.01" Text="[FormatarCampo(ToString(IIf([NFe.NFe.infNFe.dest.CPF] == &quot;&quot; || [NFe.NFe.infNFe.dest.CPF] == null, [NFe.NFe.infNFe.dest.CNPJ], [NFe.NFe.infNFe.dest.CPF])), 'd')]&#13;&#10;" Padding="5, 1, 5, 1" VertAlign="Bottom" WordWrap="false" Font="Times New Roman, 8pt, style=Bold"/>
+      <TextObject Name="Memo38" Left="468.66" Top="26.35" Width="162.52" Height="17.01" Text="[NFe.NFe.infNFe.dest.IdentificadorContribuinteFormatado]" Padding="5, 1, 5, 1" VertAlign="Bottom" WordWrap="false" Font="Times New Roman, 8pt, style=Bold"/>
       <TextObject Name="Memo39" Left="555.59" Top="43.35" Width="75.59" Height="26.46" Border.Lines="All" Border.Width="0.5" Text="CEP" Padding="2, 2, 2, 2" Font="Times New Roman, 5pt"/>
       <TextObject Name="Memo40" Left="555.59" Top="52.8" Width="75.59" Height="17.01" Text="[FormatarCampo([NFe.NFe.infNFe.dest.enderDest.CEP],'c')]" Padding="5, 1, 5, 1" VertAlign="Bottom" WordWrap="false" Font="Times New Roman, 8pt"/>
       <TextObject Name="Memo41" Left="385.51" Top="43.35" Width="170.08" Height="26.46" Border.Lines="All" Border.Width="0.5" Text="BAIRRO / DISTRITO" Padding="2, 2, 2, 2" Font="Times New Roman, 5pt"/>

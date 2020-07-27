@@ -160,5 +160,22 @@ namespace NFe.Classes.Informacoes.Destinatario
             var teste = _versao == VersaoServico.Versao200 | !string.IsNullOrEmpty(IE);
             return teste;
         }
+
+        public string IdentificadorContribuinteFormatado
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(idEstrangeiro))
+                    return idEstrangeiro;
+
+
+                if (!string.IsNullOrEmpty(cpf))
+                    return cpf.Substring(0, 3) + "." + cpf.Substring(3, 3) + "." + cpf.Substring(6, 3) + "-" + cpf.Substring(9, 2);
+                if (!string.IsNullOrEmpty(cnpj))
+                    return cnpj.Substring(0, 2) + "." + cnpj.Substring(2, 3) + "." + cnpj.Substring(5, 3) + "/ " + cnpj.Substring(8, 4) + " -" + cnpj.Substring(12, 2);
+
+                return "";
+            }
+        }
     }
 }
